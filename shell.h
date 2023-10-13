@@ -9,7 +9,7 @@
 #include <string.h>
 
 #define MAX_INPUT_LEN 1024
-extern char **environ
+extern char **environ;
 
 void display_prompt(void);
 char *strdup(const char *str);
