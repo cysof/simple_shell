@@ -7,11 +7,14 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <string.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <errno.h>
 
 #define MAX_INPUT_LEN 1024
 extern char **environ;
-
 void display_prompt(void);
+void exit_function(void);
 char *strdup(const char *str);
 char *_strcat(char *dest, char *src);
 int _strcmp(const char *str1, const char *str2);
